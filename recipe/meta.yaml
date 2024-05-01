@@ -1,5 +1,5 @@
 {% set name = "openseries" %}
-{% set version = "1.5.2" %}
+{% set version = "1.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: bc198d8d317eaf1fa0716115f29946e74265f7d3df806c04b0b3916132a9756b
+  sha256: 39b4b92d95c8a019be210b29167fc346e9ffefa5278bac495e62e07cbbdc6df8
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - openpyxl >=3.1.2,<4.0.0
     - pandas >=2.1.2,<3.0.0
     - plotly >=5.18.0,<6.0.0
-    - pyarrow >=14.0.2,<16.0.0
+    - pyarrow >=14.0.2,<17.0.0
     - pydantic >=2.5.2,<3.0.0
     - python-dateutil >=2.8.2,<3.0.0
     - requests >=2.20.0,<3.0.0
@@ -48,7 +48,7 @@ about:
   license_file: LICENSE.md
   doc_url: https://github.com/CaptorAB/openSeries
   description: |
-    openseries is a project with tools to analyse financial timeseries of a single asset or a group of assets.
+    openseries is a project with tools to analyze financial timeseries of a single asset or a group of assets.
     It is solely made for daily or less frequent data. Its origin is that our fund company needed basic tools
     to present historical performance to clients. Tools that can also be shared with clients for their own use.
 
