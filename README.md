@@ -3,15 +3,18 @@ About openseries-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openseries-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/CaptorAB/OpenSeries
+Home: https://github.com/CaptorAB/openseries
 
 Package license: BSD-3-Clause
 
-Summary: Package for analyzing financial timeseries.
+Summary: Tools for analyzing financial timeseries.
 
-Development: https://github.com/CaptorAB/OpenSeries
+Documentation: https://github.com/CaptorAB/openseries
 
-Documentation: https://github.com/CaptorAB/OpenSeries
+openseries is a project with tools to analyze financial timeseries of a single asset or a group of assets.
+It is solely made for daily or less frequent data. Its origin is that our fund company needed basic tools
+to present historical performance to clients. Tools that can also be shared with clients for their own use.
+
 
 Current build status
 ====================
