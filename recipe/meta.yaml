@@ -42,11 +42,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/CaptorAB/openSeries
+  home: https://github.com/CaptorAB/openseries
   summary: Tools for analyzing financial timeseries.
   license: BSD-3-Clause
   license_file: LICENSE.md
-  doc_url: https://github.com/CaptorAB/openSeries
+  doc_url: https://github.com/CaptorAB/openseries
   description: |
     openseries is a project with tools to analyze financial timeseries of a single asset or a group of assets.
     It is solely made for daily or less frequent data. Its origin is that our fund company needed basic tools
