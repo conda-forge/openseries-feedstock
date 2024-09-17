@@ -1,5 +1,5 @@
 {% set name = "openseries" %}
-{% set version = "1.7.2" %}
+{% set version = "1.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: da5f26acdfd8c20c34714190a497909359926fee0b9fbfc0320e198ba48b9f5c
+  sha256: 5bdc117bce1690877470a7af4f53c7fa5cb12ae2ed5c5faca93a56dbd86caab1
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
     - pydantic >=2.5.2,<3.0.0
     - python-dateutil >=2.8.2,<3.0.0
     - requests >=2.20.0,<3.0.0
-    - scipy >=1.11.4,<1.14.1
+    - scipy >=1.11.4,<2.0.0
     - statsmodels >=0.14.0,<1.0.0
 
 test:
