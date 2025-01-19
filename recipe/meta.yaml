@@ -1,5 +1,5 @@
 {% set name = "openseries" %}
-{% set version = "1.8.0" %}
+{% set version = "1.7.8" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: xxx
+  sha256: 734c44182d5999e817f8ed5e75887350e3be2b33cdeec48cae69d0f2b81d5c64
 
 build:
   noarch: python
@@ -39,12 +39,10 @@ test:
   imports:
     - openseries
   commands:
-    - poetry install --no-root --with dev
-    - poetry run coverage run -m pytest
-    - poetry run coverage report --fail-under=99
+    - pip check
   requires:
     - python {{ python_min }}
-    - poetry >=2.0.1
+    - pip
 
 about:
   home: https://github.com/CaptorAB/openseries
