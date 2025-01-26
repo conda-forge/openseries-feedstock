@@ -1,5 +1,5 @@
 {% set name = "openseries" %}
-{% set version = "1.7.8" %}
+{% set version = "1.8.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: 734c44182d5999e817f8ed5e75887350e3be2b33cdeec48cae69d0f2b81d5c64
+  sha256: 7e509257b376c8747feda8e6f5ac62de925ee1fd5da027ff45c16b407413eed1
 
 build:
   noarch: python
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core >=1.8.4
+    - poetry-core >=2.0.1
     - pip
     - numpy >=1.23.2,<3.0.0
   run:
@@ -28,7 +28,7 @@ requirements:
     - openpyxl >=3.1.2,<4.0.0
     - pandas >=2.1.2,<3.0.0
     - plotly >=5.18.0,<6.0.0
-    - pyarrow >=14.0.2,<19.0.0
+    - pyarrow >=14.0.2,<20.0.0
     - pydantic >=2.5.2,<3.0.0
     - python-dateutil >=2.8.2,<3.0.0
     - requests >=2.20.0,<3.0.0
