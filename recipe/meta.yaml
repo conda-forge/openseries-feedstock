@@ -1,5 +1,5 @@
 {% set name = "openseries" %}
-{% set version = "1.8.3" %}
+{% set version = "1.8.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: 7becbf7e078cab3bf181f56d13d4e69104ef4e93b613230014330f6ad9bbb02b
+  sha256: bc46f96c586b25a48b5c017df050f217a4197b272b19a8e6c5695c46353012ef
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - numpy >=1.23.2,<3.0.0
     - openpyxl >=3.1.2,<5.0.0
     - pandas >=2.1.2,<3.0.0
+    - pandas-market-calendars >=5.1.0,<7.0.0
     - plotly >=5.18.0,<7.0.0
     - pyarrow >=14.0.2,<21.0.0
     - pydantic >=2.5.2,<3.0.0
