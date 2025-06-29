@@ -1,5 +1,5 @@
 {% set name = "openseries" %}
-{% set version = "1.9.1" %}
+{% set version = "1.9.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: eb7c04f71f6a43d6417b85d596aa83348965361ff82e8fa7b825426ba99d3163
+  sha256: e852ecaa1458cebe99410ca5378af440def480e2da7b9bc3f080110e4f73095c
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ requirements:
     - python-dateutil >=2.8.2,<4.0.0
     - requests >=2.20.0,<3.0.0
     - scipy >=1.11.4,<2.0.0
-    - statsmodels >=0.14.0,!=0.14.2,<1.0.0
+    - scikit-learn >=1.4.0,<2.0.0
 
 test:
   imports:
