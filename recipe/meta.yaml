@@ -1,5 +1,5 @@
 {% set name = "openseries" %}
-{% set version = "1.9.6" %}
+{% set version = "1.9.7" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: a8e65f09152b70770c5447311e70815c6c501a76af8c9a5773d59a0f2228d168
+  sha256: e4dc497a269378c6dae51c67a841926e0780b47b8cc938134ee2a0285ec68a2f
 
 build:
   noarch: python
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core >=2.2.0
+    - poetry-core >=2.2.1
     - pip
     - numpy >=1.23.2,!=2.3.0,<3.0.0
   run:
