@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: 21373103883f3b2c01161a42fb7314baa2a186183ee1ed4415c360d4405c2521›
+  sha256: 21373103883f3b2c01161a42fb7314baa2a186183ee1ed4415c360d4405c2521
 
 build:
   noarch: python
