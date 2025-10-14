@@ -1,5 +1,5 @@
 {% set name = "openseries" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: 204986df279c6943541f8f0417ac6863d675401af879c52987aea7a71baa8487
+  sha256: 40ac9b2d88756a506683aa3c6b5ca6b7f330614cfade5c7cfd82de3cfc7e503e
 
 build:
   noarch: python
