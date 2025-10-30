@@ -1,5 +1,5 @@
 {% set name = "openseries" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: 40ac9b2d88756a506683aa3c6b5ca6b7f330614cfade5c7cfd82de3cfc7e503e
+  sha256: 0dc83e4b3cebf7de4730a4dd2ea50a1c8a8b179b8e1114409fad46acd2033187
 
 build:
   noarch: python
@@ -20,20 +20,20 @@ requirements:
     - python {{ python_min }}
     - poetry-core >=2.2.1
     - pip
-    - numpy >=1.23.2,!=2.3.0,<3.0.0
+    - numpy >=1.23.2
   run:
     - python >={{ python_min }}
-    - exchange-calendars >=4.8,<6.0
-    - holidays >=0.30,<1.0
-    - numpy >=1.23.2,!=2.3.0,<3.0.0
-    - openpyxl >=3.1.2,<5.0.0
-    - pandas >=2.1.2,<3.0.0
-    - plotly >=5.18.0,<7.0.0
-    - pydantic >=2.5.2,<3.0.0
-    - python-dateutil >=2.8.2,<4.0.0
-    - requests >=2.20.0,<3.0.0
-    - scipy >=1.11.4,<2.0.0
-    - scikit-learn >=1.4.0,<2.0.0
+    - exchange-calendars >=4.8
+    - holidays >=0.30
+    - numpy >=1.23.2
+    - openpyxl >=3.1.2
+    - pandas >=2.1.2
+    - plotly >=5.18.0
+    - pydantic >=2.5.2
+    - python-dateutil >=2.8.2
+    - requests >=2.20.0
+    - scipy >=1.14.1
+    - scikit-learn >=1.4.0
 
 test:
   imports:
