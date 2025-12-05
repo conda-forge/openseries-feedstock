@@ -1,6 +1,6 @@
 {% set name = "openseries" %}
-{% set version = "2.0.3" %}
-{% set python_min = "3.10" %}
+{% set version = "2.1.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: 0dc83e4b3cebf7de4730a4dd2ea50a1c8a8b179b8e1114409fad46acd2033187
+  sha256: 
 
 build:
   noarch: python
@@ -51,9 +51,7 @@ about:
   license_file: LICENSE.md
   doc_url: https://openseries.readthedocs.io
   description: |
-    openseries is a project with tools to analyze financial timeseries of a single asset or a group of assets.
-    It is solely made for daily or less frequent data. Its origin is that our fund company needed basic tools
-    to present historical performance to clients. Tools that can also be shared with clients for their own use.
+    Tools to analyze financial timeseries of single assets or portfolios. It is made for daily or less frequent data.
 
 extra:
   recipe-maintainers:
