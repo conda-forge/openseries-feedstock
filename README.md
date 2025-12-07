@@ -7,13 +7,11 @@ Home: https://github.com/CaptorAB/openseries
 
 Package license: BSD-3-Clause
 
-Summary: Tools for analyzing financial timeseries.
+Summary: Tools to analyze financial timeseries.
 
 Documentation: https://openseries.readthedocs.io
 
-openseries is a project with tools to analyze financial timeseries of a single asset or a group of assets.
-It is solely made for daily or less frequent data. Its origin is that our fund company needed basic tools
-to present historical performance to clients. Tools that can also be shared with clients for their own use.
+Tools to analyze financial timeseries of single assets or portfolios. It is made for daily or less frequent data.
 
 
 Current build status
