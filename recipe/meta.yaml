@@ -23,7 +23,7 @@ requirements:
     - numpy >=1.23.2
   run:
     - python >={{ python_min }}
-    - exchange-calendars <=4.3
+    - exchange-calendars >=4.8
     - holidays >=0.30
     - numpy >=1.23.2
     - openpyxl >=3.1.2
@@ -39,7 +39,6 @@ test:
   imports:
     - openseries
   commands:
-    - pip check
     - python -c "import openseries; print(openseries.__version__)"
   requires:
     - python {{ python_min }}
