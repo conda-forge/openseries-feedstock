@@ -3,11 +3,13 @@ About openseries-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openseries-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/CaptorAB/openseries
+Home: https://captorab.github.io/openseries/
 
 Package license: BSD-3-Clause
 
 Summary: Tools to analyze financial timeseries.
+
+Development: https://github.com/CaptorAB/openseries
 
 Documentation: https://openseries.readthedocs.io
 
