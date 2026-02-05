@@ -45,6 +45,7 @@ test:
   requires:
     - python {{ python_min }}
     - pip
+    - tzdata
 
 about:
   home: https://captorab.github.io/openseries/
