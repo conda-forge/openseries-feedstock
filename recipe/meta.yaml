@@ -1,5 +1,5 @@
 {% set name = "openseries" %}
-{% set version = "2.1.5" %}
+{% set version = "2.1.6" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: a9f5e3e56976929b1a034eb445567d29afe384975a66e15100e7c926f8af6815
+  sha256: 4b06f37819737de8f5d0ddf235f042bb8779c4aeb6995100c0fac83edd919d50
 
 build:
   noarch: python
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core >=2.2.1
+    - poetry-core >=2.3.1
     - pip
     - numpy >=1.23.2
   run:
@@ -40,16 +40,18 @@ test:
     - openseries
   commands:
     - pip check
+    - python -c "import openseries; print(openseries.__version__)"
   requires:
     - python {{ python_min }}
     - pip
 
 about:
-  home: https://github.com/CaptorAB/openseries
+  home: https://captorab.github.io/openseries/
   summary: Tools to analyze financial timeseries.
   license: BSD-3-Clause
   license_file: LICENSE.md
   doc_url: https://openseries.readthedocs.io
+  dev_url: https://github.com/CaptorAB/openseries
   description: |
     Tools to analyze financial timeseries of single assets or portfolios. It is made for daily or less frequent data.
 
