@@ -23,7 +23,7 @@ requirements:
     - numpy >=1.23.2
   run:
     - python >={{ python_min }}
-    - exchange-calendars >=4.8
+    - exchange-calendars <=4.3
     - holidays >=0.30
     - numpy >=1.23.2
     - openpyxl >=3.1.2
@@ -34,7 +34,6 @@ requirements:
     - requests >=2.20.0
     - scipy >=1.14.1
     - scikit-learn >=1.4.0
-    - tzdata
 
 test:
   imports:
@@ -45,7 +44,6 @@ test:
   requires:
     - python {{ python_min }}
     - pip
-    - tzdata
 
 about:
   home: https://captorab.github.io/openseries/
