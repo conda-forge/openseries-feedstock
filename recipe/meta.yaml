@@ -1,5 +1,5 @@
 {% set name = "openseries" %}
-{% set version = "2.1.6" %}
+{% set version = "2.1.7" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: 4b06f37819737de8f5d0ddf235f042bb8779c4aeb6995100c0fac83edd919d50
+  sha256: 659f34cc04e8b81c7c20b3c706d5192478de5c964970f60ee568594066654e80
 
 build:
   noarch: python
@@ -34,15 +34,18 @@ requirements:
     - requests >=2.20.0
     - scipy >=1.14.1
     - scikit-learn >=1.4.0
+    - python-tzdata >=2025.3
 
 test:
   imports:
     - openseries
   commands:
     - python -c "import openseries; print(openseries.__version__)"
+    - pip check
   requires:
     - python {{ python_min }}
     - pip
+    - python-tzdata >=2025.3
 
 about:
   home: https://captorab.github.io/openseries/
