@@ -1,5 +1,5 @@
 {% set name = "openseries" %}
-{% set version = "2.1.10" %}
+{% set version = "2.1.11" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
-  sha256: d012b14c8abf9a0e7c9bdca18ab0859c570c35799f73b1aa57eb3af55489d269
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/openseries-{{ version }}.tar.gz
+  sha256: e415de11e8ac36fdae2d7e80d5a72f835f4a29c0d08cc579488f85b9ce574fe7
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools >=69
+    - setuptools >=82
     - wheel
   run:
     - python >={{ python_min }}
